@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +14,25 @@
 
       gtag('config', 'G-K8W9KJP22E');
     </script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-    document.getElementById('toggle-theme').addEventListener('click', function() {
-        var htmlElm = document.getElementByTag('html');
-        
-        // Toggle between light and dark theme
-        if (htmlElm.getAttribute('data-bs-theme') === 'light') {
-            themeStylesheet.setAttribute('data-bs-theme', 'dark');
-            this.innerText = 'Switch to Dark Mode';
-        } else {
-            themeStylesheet.setAttribute('data-bs-theme', 'light');
-            this.innerText = 'Switch to Light Mode';
-        }
+    $(document).ready(function() {
+        $('#toggle-theme').click(function() {
+            var htmlElm = $('html');
+            
+            // Toggle between light and dark theme
+            if (htmlElm.attr('data-bs-theme') === 'light') {
+                htmlElm.attr('data-bs-theme', 'dark');
+                $(this).text('Switch to Light Mode');
+            } else {
+                htmlElm.attr('data-bs-theme', 'light');
+                $(this).text('Switch to Dark Mode');
+            }
+        });
     });
 </script>
+
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
