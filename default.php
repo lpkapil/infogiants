@@ -241,7 +241,7 @@ $(document).ready(function() {
              </div>
              <div class="col col-md-2 text-end">
                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPoJTgKfgD1Mfw4KtHU0Gtu-U6a9YCRgiUdg5kJ_yAoS6A-A/viewform?usp=dialog" target="_blank">Feedback</a>
-                 <a href="#" class="text-secondary">Back to top</a>
+                 | <a href="#" class="text-secondary">Back to top</a>
              </div>
          </div>
       </div>
