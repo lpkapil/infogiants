@@ -152,14 +152,13 @@ $(document).ready(function() {
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
           <div class="card-body position-relative">
-            <h5 class="card-title">Tool 2</h5>
-            <p class="card-text">Effortlessly to do something useful using this tool for faster uploads and optimized storage..</p>
+            <h5 class="card-title">QR Code Generator</h5>
+            <p class="card-text">A QR code generator creates scannable codes from text or URLs.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-primary">Use Tool</a>
+                <a href="/qa_code_generator_app" class="btn btn-sm btn-primary">Use Tool</a>
               </div>
             </div>
-            <div class="card-overlay">Coming Soon</div>
           </div>
         </div>
       </div>
