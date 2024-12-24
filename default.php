@@ -17,21 +17,36 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $('#toggle-theme').click(function() {
-            var htmlElm = $('html');
-            
-            // Toggle between light and dark theme
-            if (htmlElm.attr('data-bs-theme') === 'light') {
-                htmlElm.attr('data-bs-theme', 'dark');
-                $(this).text('Switch to Light Mode');
-            } else {
-                htmlElm.attr('data-bs-theme', 'light');
-                $(this).text('Switch to Dark Mode');
-            }
-        });
+$(document).ready(function() {
+    // Check the theme stored in localStorage on page load
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        $('html').attr('data-bs-theme', savedTheme);
+        if (savedTheme === 'dark') {
+            $('#toggle-theme').text('Switch to Light Mode');
+        } else {
+            $('#toggle-theme').text('Switch to Dark Mode');
+        }
+    }
+
+    // Toggle theme when the button is clicked
+    $('#toggle-theme').click(function() {
+        var htmlElm = $('html');
+        
+        // Toggle between light and dark theme
+        if (htmlElm.attr('data-bs-theme') === 'light') {
+            htmlElm.attr('data-bs-theme', 'dark');
+            $(this).text('Switch to Light Mode');
+            localStorage.setItem('theme', 'dark');  // Save dark mode preference
+        } else {
+            htmlElm.attr('data-bs-theme', 'light');
+            $(this).text('Switch to Dark Mode');
+            localStorage.setItem('theme', 'light');  // Save light mode preference
+        }
     });
+});
 </script>
+
 
 
     <!-- Bootstrap CSS -->
