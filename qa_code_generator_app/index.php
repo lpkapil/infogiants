@@ -86,7 +86,8 @@ $(document).ready(function() {
             <form action="generate_qr.php" method="POST">
                 <div class="mb-3">
                     <label for="image" class="form-label">Enter Data for QR Code (URL, Text, etc.)</label>
-                    <input type="text" class="form-control" id="qrData" name="qrData" required>
+                    <input type="text" class="form-control" id="qrData" name="qrData" required maxlength="1000">
+                    <div class="form-text">Enter up to 1000 characters for the QR code.</div>
                 </div>
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-primary">Generate QR Code</button>
