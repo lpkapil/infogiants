@@ -14,6 +14,21 @@
 
       gtag('config', 'G-K8W9KJP22E');
     </script>
+    <script>
+    document.getElementById('toggle-theme').addEventListener('click', function() {
+        var htmlElm = document.getElementByTag('html');
+        
+        // Toggle between light and dark theme
+        if (htmlElm.getAttribute('data-bs-theme') === 'light') {
+            themeStylesheet.setAttribute('data-bs-theme', 'dark');
+            this.innerText = 'Switch to Dark Mode';
+        } else {
+            themeStylesheet.setAttribute('data-bs-theme', 'light');
+            this.innerText = 'Switch to Light Mode';
+        }
+    });
+</script>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -70,7 +85,7 @@
             </svg>
             <span class="ms-2 fs-4 text-white">InfoGiants </span><span class="fs-6 text-white ms-3 mt-1"> - Free softwares and information</span>
         </a>
-        
+        <button id="toggle-theme" class="btn btn-secondary">Switch to Dark Mode</button>
         <!-- Navbar Toggler -->
         <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">-->
         <!--    <span class="navbar-toggler-icon"></span>-->
