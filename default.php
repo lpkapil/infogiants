@@ -141,7 +141,7 @@ $(document).ready(function() {
             <p class="card-text">Effortlessly reduce image sizes while preserving quality for faster uploads and optimized storage.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <a href="/image_compresser" class="btn btn-sm btn-primary">Use Tool</a>
+                <a href="/image_compresser_app" class="btn btn-sm btn-primary">Use Tool</a>
               </div>
             </div>
           </div>
