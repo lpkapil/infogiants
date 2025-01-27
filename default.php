@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoGiants - Free softwares and information</title>
+    <title>InfoGiants Tools- Free softwares and information</title>
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8W9KJP22E"></script>

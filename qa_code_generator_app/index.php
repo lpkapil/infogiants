@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoGiants - QR Code Generator Tool</title>
+    <title>InfoGiants Tools - QR Code Generator Tool</title>
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -67,7 +67,7 @@ $(document).ready(function() {
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
                 <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708"/>
             </svg>
-            <span class="ms-2 fs-4 text-white">InfoGiants </span><span class="fs-6 text-white ms-3 mt-1"> - Free softwares and information</span>
+            <span class="ms-2 fs-4 text-white">InfoGiants Tools</span><span class="fs-6 text-white ms-3 mt-1"> - Free softwares and information</span>
         </a>
         <button id="toggle-theme" class="btn btn-secondary">Switch to Dark Mode</button>
         <!-- Navbar Toggler -->
